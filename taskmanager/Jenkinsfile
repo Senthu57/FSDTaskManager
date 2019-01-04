@@ -15,7 +15,7 @@ pipeline {
         }
         stage ('Build') {
             steps {
-                    bat 'cd taskmanager && mvn install -DskipTests'
+                    bat 'cd taskmanager && mvn install -Dmaven.test.skip=true'
             }
         }
         stage ('Docker-Build') {
