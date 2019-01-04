@@ -36,7 +36,7 @@ public class TaskmanagerApplicationTests {
 		
 	}
 	
-	//@Test
+	
 	public void testMe() {
 		String testhome = controller.testHome();
 		Assert.assertEquals(testhome, "Task Manager App - Test ");
